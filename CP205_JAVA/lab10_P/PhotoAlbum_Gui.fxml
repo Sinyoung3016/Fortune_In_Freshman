@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane fx:controller="lab10_P.PhotoAlbum_Controller" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <ImageView fx:id="main" fitHeight="200.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <Button fx:id="left" mnemonicParsing="false" onAction="#goLeft" prefHeight="100.0" prefWidth="50.0" text="&lt;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Button fx:id="right" mnemonicParsing="false" onAction="#goRight" prefHeight="100.0" prefWidth="50.0" text="&gt;" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

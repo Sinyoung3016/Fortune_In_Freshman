@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="stoplap_gui" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" spacing="5.0" style="-fx-background-color: #cdecfa;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab11.StopWatch_timer_controller">
+   <children>
+      <Label fx:id="timeField" alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #b4b4dc; -fx-border-color: black; -fx-border-width: 3;" text="00:00:00.000" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Button fx:id="stopbutton" mnemonicParsing="false" onAction="#stopAction" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #aadbff;" text="일시정지" />
+            <Button fx:id="laptimebutton" mnemonicParsing="false" onAction="#laptimeAction" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #91b5ff;" text="랩타임" />
+         </children>
+      </HBox>
+      <Label fx:id="nowlap" prefHeight="30.0" text="현재 랩 : 00:00:00.000" />
+      <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #dedefa;">
+        <columns>
+          <TableColumn fx:id="num" prefWidth="30.39996337890625" text="#" />
+          <TableColumn fx:id="time" prefWidth="173.5999813079834" text="Lap Time" />
+            <TableColumn fx:id="total" prefWidth="197.60003662109375" text="Total" />
+        </columns>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </TableView>
+   </children>
+</VBox>

@@ -1,0 +1,15 @@
+import turtle
+t= turtle.Turtle()
+t.forward(100)
+t.left(60)
+t.forward(100)
+t.left(60)
+t.forward(100)
+t.left(60)
+t.forward(100)
+t.left(60)
+t.forward(100)
+t.left(60)
+t.forward(100)
+
+print("육각형을 만들기 위해 60도의 각도로 회전시켜야 합니다.")
